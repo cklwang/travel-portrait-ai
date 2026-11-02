@@ -52,7 +52,7 @@ export async function onRequestPost({ request, env }) {
       "Natural lighting, realistic photography.";
 
     const result = await env.AI.run(
-      "@cf/runwayml/stable-diffusion-xl-lightning",
+      "@cf/bytedance/stable-diffusion-xl-lightning",
       {
         prompt,
         image_b64: base64,
