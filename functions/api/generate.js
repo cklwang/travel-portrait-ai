@@ -52,7 +52,7 @@ export async function onRequestPost({ request, env }) {
       "Natural lighting, realistic photography.";
 
     const result = await env.AI.run(
-      "@cf/runwayml/stable-diffusion-v1-5-inpainting",
+      "@cf/runwayml/stable-diffusion-v1-5-img2img",
       {
         prompt,
         image_b64: base64,
