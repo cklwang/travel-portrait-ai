@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#202020">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="旅拍助手">
+  <title>旅遊人像攝影助手</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>旅遊人像攝影助手</h1>
+    <p>讓每一張旅行照片都更精彩。</p>
+    <section class="panel">
+      <h2>景點照片</h2>
+      <input type="file" id="photo" accept="image/*">
+      <div id="preview"></div>
+    </section>
+    <section class="panel">
+      <h2>拍攝設定</h2>
+      <label>拍攝風格</label>
+      <select id="style">
+        <option value="natural">自然隨性</option>
+        <option value="fashion">專業時尚</option>
+      </select>
+      <label>拍攝人數</label>
+      <select id="people">
+        <option value="1">單人</option>
+        <option value="2">雙人</option>
+        <option value="3">多人</option>
+      </select>
+      <label>景點類型</label>
+      <select id="place">
+        <option>自然風景</option>
+        <option>城市街道</option>
+        <option>建築景點</option>
+        <option>海邊</option>
+        <option>公園</option>
+      </select>
+      <button id="recommend">推薦拍攝姿勢</button>
+    </section>
+    <section class="panel">
+      <h2>拍攝建議</h2>
+      <div id="result">選擇照片及設定後，按下推薦按鈕。</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
