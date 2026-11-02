@@ -1,0 +1,10 @@
+{
+  "name": "旅遊人像攝影助手",
+  "short_name": "旅拍助手",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f2f2",
+  "theme_color": "#202020",
+  "description": "旅行景點人像攝影姿勢與構圖建議助手"
+}
