@@ -55,7 +55,7 @@ export async function onRequestPost({ request, env }) {
       "@cf/bytedance/stable-diffusion-xl-lightning",
       {
         prompt,
-        image_b64: base64,
+        image: Array.from(Uint8Array.from(atob(base64), 
         strength: 0.35,
         guidance: 7.5,
         num_steps: 20,
